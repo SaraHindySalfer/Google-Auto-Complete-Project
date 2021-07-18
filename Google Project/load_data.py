@@ -18,7 +18,7 @@ class Data:
 
     def insert_data_to_dict(self):
         print("Loading data please wait until done...")
-        dir_path = os.path.dirname("./2021-archive/RFC/")
+        dir_path = os.path.dirname("./2021-archive/python-3.8.4-docs-text/")
         for root, dirs, files in os.walk(dir_path):
             for file in files:
                 with open(root[2:] + '\\' + file, encoding='utf8') as text_file:
